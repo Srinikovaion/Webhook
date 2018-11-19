@@ -25,7 +25,7 @@ def makeResponse(req):
     parameters = result.get("parameters")
     EMPLID = parameters.get("EMPLID")
     PARAMS = {'EMPLID':EMPLID}
-    r=requests.get('http://oelser3.kovaion.com:8000/PSIGW/RESTListeningConnector/PSFT_HR/XX_EMPL_NAME.v1/?',json={"EMPLID": +EMPLID})
+    r=requests.get('http://oelser3.kovaion.com:8000/PSIGW/RESTListeningConnector/PSFT_HR/XX_EMPL_NAME.v1/?',json={"EMPLID": EMPLID})
     json_object = r.json()
     empl_name=json_object['XX_EMPL_NAME'][0]['XX_NAME']
     
