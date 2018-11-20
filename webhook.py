@@ -33,9 +33,8 @@ def makeResponse(req):
 
     
     json_object = r.json()
-    empl_name=json_object['XX_EMPL_NAME'][0]['XX_NAME']
-    
-    speech = "The EMPLOYEE name returned from Peoplesoft Database is:"+empl_name
+    print(% json_object)
+    speech = "The EMPLOYEE name returned from Peoplesoft Database is:"+json_object
     return {
     "speech": speech,
     "displayText": speech,
