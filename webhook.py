@@ -28,7 +28,7 @@ def makeResponse(req):
         
     url = "http://oelser3.kovaion.com:8000/PSIGW/RESTListeningConnector/PSFT_HR/XX_EMPL_DETAILS.v1/"
     
-    data = {"result": {"source": "","resolvedQuery": "","speech": "","action": "","actionIncomplete": "","parameters": {"EMPLID": "FA862","parameters": ""}}
+    data = {"result": {"source": "","resolvedQuery": "","speech": "","action": "","actionIncomplete": "","parameters": {"EMPLID": EMPLID,"parameters": ""}}
 }
 
     headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
