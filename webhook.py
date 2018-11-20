@@ -28,9 +28,8 @@ def makeResponse(req):
         
     url = "http://oelser3.kovaion.com:8000/PSIGW/RESTListeningConnector/PSFT_HR/XX_EMPL_DETAILS.v1/"
     
-    data =  {"result": {
-"source": "","resolvedQuery": "","speech": "","action": "","actionIncomplete": "","parameters": {"EMPLID": "KU0425" ,"parameters": ""}}
-}
+    data =  {"source": "","resolvedQuery": "","speech": "","action": "","actionIncomplete": "","parameters": {"EMPLID": "KU0425" ,"parameters": ""}}
+
     headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
     r = requests.post(url, data=json.dumps(data), headers=headers)
 
